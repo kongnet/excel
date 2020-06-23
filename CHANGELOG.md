@@ -1,3 +1,8 @@
+## [0.1.8](https://github.com/kongnet/excel/compare/v0.1.7...v0.1.8) (2020-06-23)
+
+
+
+
 ## [0.1.7](https://github.com/kongnet/excel/compare/v0.1.6...v0.1.7) (2020-06-23)
 
 

@@ -1,3 +1,12 @@
+## [0.1.11](https://github.com/kongnet/excel/compare/v0.1.10...v0.1.11) (2020-06-23)
+
+
+### :memo:
+
+* 增加自动生成百分比功能 ([5805559](https://github.com/kongnet/excel/commit/58055592ce13a2aaac4d68467ec11d6e88be78b6))
+
+
+
 ## [0.1.10](https://github.com/kongnet/excel/compare/v0.1.9...v0.1.10) (2020-06-23)
 
 

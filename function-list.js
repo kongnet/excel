@@ -3,18 +3,8 @@
 */
 const $ = require('meeko')
 const fs = require('fs')
-const { fillStr } = require('meeko/lib/string')
-let errorObj = {
-  nil: '#NULL!',
-  div0: '#DIV/0!',
-  value: '#VALUE!',
-  ref: '#REF!',
-  name: '#NAME?',
-  num: '#NUM!',
-  na: '#N/A',
-  error: '#ERROR!',
-  data: '#GETTING_DATA'
-}
+const path = require('path')
+const completeObj = $.requireAll({ dirname: path.join(__dirname, './lib') })
 let $E = {}
 let DATE = [
   {
@@ -296,10 +286,38 @@ let MATH = [
       'https://support.microsoft.com/zh-cn/office/abs-%e5%87%bd%e6%95%b0-3420200f-5628-4e8c-99da-c99d7c87713c?ns=excel&version=16&syslcid=2052&uilcid=2052&appver=zxl160&helpid=xlmain11.chm60072&ui=zh-cn&rs=zh-cn&ad=cn',
     fName: 'ABS'
   },
-  { class: '数学', desc: '--', url: '--', fName: 'ACOS' },
-  { class: '数学', desc: '--', url: '--', fName: 'ACOSH' },
-  { class: '数学', desc: '--', url: '--', fName: 'ACOT' },
-  { class: '数学', desc: '--', url: '--', fName: 'ACOTH' },
+  {
+    class: '数学',
+    desc:
+      '返回数字的反余弦值。 反余弦值是指余弦值为 number 的角度。 返回的角度以弧度表示，弧度值在 0（零）到 pi 之间。',
+    url:
+      'https://support.microsoft.com/zh-cn/office/acos-%e5%87%bd%e6%95%b0-cb73173f-d089-4582-afa1-76e5524b5d5b?ns=excel&version=16&syslcid=2052&uilcid=2052&appver=zxl160&helpid=xlmain11.chm60147&ui=zh-cn&rs=zh-cn&ad=cn',
+    fName: 'ACOS'
+  },
+  {
+    class: '数学',
+    desc:
+      '返回数字的反双曲余弦值。 该数字必须大于或等于 1。 反双曲余弦值是指双曲余弦值为 number 的值，因此 ACOSH(COSH(number)) 等于 number。<br>Number    必需。 大于或等于 1 的任意实数。',
+    url:
+      'https://support.microsoft.com/zh-cn/office/acosh-%e5%87%bd%e6%95%b0-e3992cc1-103f-4e72-9f04-624b9ef5ebfe?ns=excel&version=16&syslcid=2052&uilcid=2052&appver=zxl160&helpid=xlmain11.chm60281&ui=zh-cn&rs=zh-cn&ad=cn',
+    fName: 'ACOSH'
+  },
+  {
+    class: '数学',
+    desc:
+      '返回数字的反余切值的主值。<br>Number    必需。 Number 为所需角度的余切值。 此值必须是实数。',
+    url:
+      'https://support.microsoft.com/zh-cn/office/acot-%E5%87%BD%E6%95%B0-dc7e5008-fe6b-402e-bdd6-2eea8383d905',
+    fName: 'ACOT'
+  },
+  {
+    class: '数学',
+    desc:
+      '返回数字的反双曲余切值。<br>Number    必需。 Number 的绝对值必须大于 1。',
+    url:
+      'https://support.microsoft.com/zh-cn/office/acoth-%e5%87%bd%e6%95%b0-cc49480f-f684-4171-9fc5-73e4e852300f?ns=excel&version=16&syslcid=2052&uilcid=2052&appver=zxl160&helpid=xlmain11.chm60597&ui=zh-cn&rs=zh-cn&ad=cn',
+    fName: 'ACOTH'
+  },
   { class: '数学', desc: '--', url: '--', fName: 'AGGREGATE' },
   { class: '数学', desc: '--', url: '--', fName: 'ARABIC' },
   { class: '数学', desc: '--', url: '--', fName: 'ASIN' },
@@ -513,14 +531,25 @@ obj.push({ text: '==小计==', count: sum })
 $.drawTable(obj)
 
 let itemArr = []
+let funCount = 0
+let funCompleted = 0
 for (let i in $E) {
-  let a = $E[i].map(x => [
-    x.fName,
-    x.desc,
-    `<a href="${x.url}">${x.fName}</a>`,
-    x.isCompleted || '否',
-    x.note || '--'
-  ])
+  let a = $E[i].map(x => {
+    funCount++
+    let b =
+      typeof $.tools.objByString(
+        completeObj,
+        `${i.toLowerCase()}.${x.fName.toLowerCase()}`
+      ) === 'function'
+    if (b) funCompleted++
+    return [
+      x.fName,
+      x.desc,
+      `<a href="${x.url}">${x.fName}</a>`,
+      b ? '完成' : '否',
+      x.note || '--'
+    ]
+  })
 
   let r = $.tools.genTemp.gridTable(
     [
@@ -538,8 +567,15 @@ for (let i in $E) {
 
 fs.writeFileSync(
   'excel-list.html',
-  $.tools.genTemp.genHtml('EXCEL 2016 函数', itemArr.join('\n'))
+  $.tools.genTemp.genHtml(
+    'EXCEL 2016 函数',
+    'EXCEL 2016 函数 完成率:' +
+      (((funCompleted / funCount) * 1000) | 0) / 10 +
+      '%' +
+      itemArr.join('\n')
+  )
 )
 
 async function main () {}
 main()
+console.log((((funCompleted / funCount) * 1000) | 0) / 10, '%')

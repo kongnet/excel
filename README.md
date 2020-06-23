@@ -12,4 +12,4 @@ JavaScript realizes all functions of Excel 2016
 
 #### 文件说明
 
-- node function-list.js 生成完成列表
+- node function-list.js 自动生成完成列表

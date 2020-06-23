@@ -1,23 +1,18 @@
 {
-  "name": "xls-js",
+  "name": "jsexcel",
   "version": "0.1.2",
   "description": "JavaScript realizes all functions of Excel 2016",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "cz": "conventional-changelog -p atom -i CHANGELOG.md -s -r 0 && git add . && git status && git cz",
-    "push": "npm version patch && npm publish . --access=public' && git push"
+    "push": "npm version patch && npm publish --access=public . ' && git push"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kongnet/excel.git"
   },
-  "keywords": [
-    "excel",
-    "javascript",
-    "es6",
-    "nodejs"
-  ],
+  "keywords": ["excel", "javascript", "es6", "nodejs"],
   "author": "Kongnet",
   "license": "MIT",
   "bugs": {

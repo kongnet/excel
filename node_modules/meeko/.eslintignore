@@ -1,0 +1,8 @@
+out
+test
+tests
+node_modules
+coverage
+lib/reg
+test*.js
+*.html

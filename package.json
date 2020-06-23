@@ -1,0 +1,33 @@
+{
+  "name": "excel-js",
+  "version": "0.1.0",
+  "description": "JavaScript realizes all functions of Excel 2016",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cz": "conventional-changelog -p atom -i CHANGELOG.md -s -r 0 && git add . && git status && git cz",
+    "push": "npm version patch && npm publish . && git push"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kongnet/excel.git"
+  },
+  "keywords": ["excel", "javascript", "es6", "nodejs"],
+  "author": "Kongnet",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kongnet/excel/issues"
+  },
+  "homepage": "https://github.com/kongnet/excel#readme",
+  "dependencies": {
+    "meeko": "^1.8.103"
+  },
+  "devDependencies": {
+    "cz-jt": "^0.1.11"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-jt"
+    }
+  }
+}

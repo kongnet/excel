@@ -2,7 +2,6 @@ node_modules
 coverage
 out
 output
-*.html
 *.log
 *.csv
 test*.*

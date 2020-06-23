@@ -1,6 +1,6 @@
 {
   "name": "xls-js",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "JavaScript realizes all functions of Excel 2016",
   "main": "index.js",
   "scripts": {
@@ -12,7 +12,12 @@
     "type": "git",
     "url": "git+https://github.com/kongnet/excel.git"
   },
-  "keywords": ["excel", "javascript", "es6", "nodejs"],
+  "keywords": [
+    "excel",
+    "javascript",
+    "es6",
+    "nodejs"
+  ],
   "author": "Kongnet",
   "license": "MIT",
   "bugs": {

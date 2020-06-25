@@ -5,7 +5,8 @@ output
 *.log
 *.csv
 test*.*
-package-lock.json
 .scannerwork
 .nyc_output
 mochawesome-report
+dist
+.DS_Store

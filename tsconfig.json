@@ -4,7 +4,7 @@
     "baseUrl": ".",
     "outDir": "dist",
     "target": "ES2019",
-    "module": "commonjs",
+    "module": "ESNext",
     "moduleResolution": "node",
     "lib": ["ES2019", "dom"],
     "types": ["jest"],

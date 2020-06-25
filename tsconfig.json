@@ -13,8 +13,12 @@
     "resolveJsonModule": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
+    "paths": {
+      "@jsxls/*": ["packages/*/src"],
+      "shared/*": ["packages/shared/src/*"]
+    },
     "keyofStringsOnly": true
   },
-  "include": ["src", "*.vue", "__tests__"],
+  "include": ["packages/global.d.ts", "packages/*/src", "__tests__"],
   "exclude": ["dist"]
 }

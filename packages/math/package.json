@@ -1,0 +1,21 @@
+{
+  "name": "@jsxls/math",
+  "version": "0.1.12",
+  "description": "@jsxls/math",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "dist"
+  ],
+  "types": "dist/math.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kongnet/excel.git"
+  },
+  "keywords": [],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kongnet/excel/issues"
+  },
+  "homepage": "https://github.com/kongnet/excel/tree/dev/packages/math#readme"
+}

@@ -1,0 +1,22 @@
+{
+  "name": "@jsxls/shared",
+  "private": true,
+  "version": "0.1.12",
+  "description": "@jsxls/shared",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "dist"
+  ],
+  "types": "dist/shared.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kongnet/excel.git"
+  },
+  "keywords": [],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kongnet/excel/issues"
+  },
+  "homepage": "https://github.com/kongnet/excel/tree/dev/packages/shared#readme"
+}

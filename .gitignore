@@ -10,3 +10,4 @@ test*.*
 mochawesome-report
 dist
 .DS_Store
+temp

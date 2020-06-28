@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest --coverage",
+    "jsdoc": "jsdoc ./README.md --configure  ./jsdoc.config.js",
     "cz": "conventional-changelog -p atom -i CHANGELOG.md -s -r 0 && git add . && git status && git cz",
     "push": "npm version patch && npm publish .  && git push"
   },
@@ -29,7 +30,7 @@
   },
   "devDependencies": {
     "cz-jt": "^0.1.11",
-    "jest": "^26.1.0"
+    "minami": "^1.2.3"
   },
   "config": {
     "commitizen": {

@@ -150,9 +150,30 @@ let TEXT = [
   { class: '文本', desc: '--', url: '--', fName: 'WIDECHAR' }
 ]
 let WEB = [
-  { class: '网络', desc: '--', url: '--', fName: 'ENCODEURL' },
-  { class: '网络', desc: '--', url: '--', fName: 'FILTERXML' },
-  { class: '网络', desc: '--', url: '--', fName: 'WEBSERVICE' }
+  {
+    class: '网络',
+    desc:
+      'ENCODEURL函数返回 URL 编码的字符串，用百分比符号（%）替换某些非字母数字字符和一个十六进制数字。',
+    url:
+      'https://support.microsoft.com/zh-cn/office/encodeurl-%E5%87%BD%E6%95%B0-07c7fb90-7c60-4bff-8687-fac50fe33d0e',
+    fName: 'ENCODEURL'
+  },
+  {
+    class: '网络',
+    desc:
+      'FILTERXML 函数使用指定的 xpath 从 XML 内容返回特定数据。<br>Mac中不可用',
+    url:
+      'https://support.microsoft.com/zh-cn/office/filterxml-%E5%87%BD%E6%95%B0-4df72efc-11ec-4951-86f5-c1374812f5b7',
+    fName: 'FILTERXML'
+  },
+  {
+    class: '网络',
+    desc:
+      'WEBSERVICE函数从 Internet 或 Intranet 上的 web 服务返回数据。<br>Mac中不可用',
+    url:
+      'https://support.microsoft.com/zh-cn/office/webservice-%E5%87%BD%E6%95%B0-0546a35a-ecc6-4739-aed7-c0b7ce1562c4',
+    fName: 'WEBSERVICE'
+  }
 ]
 let CUBE = [
   { class: '多维数据集', desc: '--', url: '--', fName: 'CUBEKPIMEMBER' },

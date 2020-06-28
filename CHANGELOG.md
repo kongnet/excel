@@ -1,3 +1,12 @@
+## [0.1.16](https://github.com/kongnet/excel/compare/v0.1.15...v0.1.16) (2020-06-28)
+
+
+### :sparkles:
+
+* 增加测试规范，增加文档生成 ([7257062](https://github.com/kongnet/excel/commit/7257062b1ae31eb28326fa56359d114f908b2c3e))
+
+
+
 ## [0.1.15](https://github.com/kongnet/excel/compare/v0.1.14...v0.1.15) (2020-06-28)
 
 

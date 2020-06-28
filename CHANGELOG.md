@@ -1,3 +1,12 @@
+## [0.1.18](https://github.com/kongnet/excel/compare/v0.1.17...v0.1.18) (2020-06-28)
+
+
+### :sparkles:
+
+* 完成逻辑组函数 ([8098967](https://github.com/kongnet/excel/commit/80989675248ce8d42fed4e5ed82babc25325656d))
+
+
+
 ## [0.1.17](https://github.com/kongnet/excel/compare/v0.1.16...v0.1.17) (2020-06-28)
 
 

@@ -50,9 +50,9 @@ const abs = () => Math.abs(n)
 | 统计       | 107  |
 | ==小计==   | 429  |
 
-
-
 #### 完成情况
+
+- 完成率:4.6%
 
 [完成情况列表 跳转会比较慢](https://htmlpreview.github.io/?https://github.com/kongnet/excel/blob/master/excel-list.html)
 

@@ -560,7 +560,7 @@ for (let i in $E) {
     let b =
       typeof $.tools.objByString(
         completeObj,
-        `${i.toLowerCase()}.${x.fName.toLowerCase()}`
+        `${i.toLowerCase()}.${x.fName.toUp()}`
       ) === 'function'
     if (b) funCompleted++
     return [

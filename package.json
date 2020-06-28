@@ -13,12 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/kongnet/excel.git"
   },
-  "keywords": [
-    "excel",
-    "javascript",
-    "es6",
-    "nodejs"
-  ],
+  "keywords": ["excel", "javascript", "es6", "nodejs"],
   "author": "Kongnet",
   "license": "MIT",
   "bugs": {

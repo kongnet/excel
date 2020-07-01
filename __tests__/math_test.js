@@ -7,6 +7,7 @@ console.log(
   CEILINGMATH(-8.1, 2),
   CEILINGMATH(-5.5, 2, 1) //网页例子有误
 )
+console.log(CEILINGMATH(2.11, 0.2), CEILINGMATH(2.21, 0.2))
 
 console.log(COMBIN(8, 2))
 

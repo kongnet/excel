@@ -347,7 +347,7 @@ let MATH = [
   { class: '数学', desc: '--', url: '--', fName: 'ATAN2' },
   { class: '数学', desc: '--', url: '--', fName: 'ATANH' },
   { class: '数学', desc: '--', url: '--', fName: 'BASE' },
-  { class: '数学', desc: '--', url: '--', fName: 'CEILING.MATH' },
+  { class: '数学', desc: '--', url: '--', fName: 'CEILINGMATH' },
   { class: '数学', desc: '--', url: '--', fName: 'COMBIN' },
   { class: '数学', desc: '--', url: '--', fName: 'COMBINA' },
   { class: '数学', desc: '--', url: '--', fName: 'COS' },

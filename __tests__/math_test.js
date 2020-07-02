@@ -23,6 +23,50 @@ console.log(CSCH(1.5))
 console.log(DECIMAL('zap', 36))
 console.log(DEGREES(Math.PI))
 console.log(EVEN(1.5), EVEN(3), EVEN(2), EVEN(-1), EVEN(-1, 2, -1), EVEN(-0.5))
+
+console.log(EXP(1))
+console.log(FACT(5))
+console.log(FACTDOUBLE(6))
+console.log(FACTDOUBLE(7))
+
+console.log(FLOOR(3.7, 2))
+console.log(FLOOR(-2.5, -2))
+console.log(FLOOR(1.58, 0.1))
+console.log(FLOOR(0.234, 0.01))
+console.log(FLOOR(2.5, -2)) //符号相反throw出错
+
+console.log(FLOORMATH(24.3, 5))
+console.log(FLOORMATH(6.7))
+console.log(FLOORMATH(-8.1, 2))
+console.log(FLOORMATH(-5.5, 2, -1))
+
+console.log(FLOORPRECISE(-3.2, -1))
+console.log(FLOORPRECISE(3.2, 1))
+console.log(FLOORPRECISE(-3.2, 1))
+console.log(FLOORPRECISE(3.2, -1))
+console.log(FLOORPRECISE(3.2))
+
+console.log(GCD(24, 0, 0, 0, 4))
+console.log(GCD(5, 2))
+console.log(GCD(7, 1))
+console.log(GCD(5, 0))
+
+console.log(INT(8.9))
+console.log(INT(-8.9))
+console.log(LCM(5, 2))
+console.log(LCM(24, 36, 4, 2, 3))
+
+console.log(LN(2.7182818))
+console.log(LN(86))
+console.log(LN(EXP(3)))
+
+console.log(LOG(10))
+console.log(LOG(8, 2))
+console.log(LOG(86, 2.7182818))
+
+console.log(LOG10(86))
+console.log(LOG10(1e5))
+console.log(LOG10(10))
 */
 describe('数学函数测试', () => {
   test('math abs', async () => {

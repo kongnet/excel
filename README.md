@@ -52,7 +52,7 @@ const abs = () => Math.abs(n)
 
 #### 完成情况
 
-- 完成率:10.2%
+- 完成率:10.4%
 
 [完成情况列表 跳转会比较慢](https://htmlpreview.github.io/?https://github.com/kongnet/excel/blob/master/excel-list.html)
 

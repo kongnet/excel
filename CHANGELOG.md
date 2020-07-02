@@ -1,3 +1,12 @@
+## [0.1.22](https://github.com/kongnet/excel/compare/v0.1.21...v0.1.22) (2020-07-02)
+
+
+### :sparkles:
+
+* 增加函数到10% ([ab8925b](https://github.com/kongnet/excel/commit/ab8925bc530f124237eb60b2b95d0dac8589e17a))
+
+
+
 ## [0.1.21](https://github.com/kongnet/excel/compare/v0.1.20...v0.1.21) (2020-07-01)
 
 

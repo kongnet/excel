@@ -363,7 +363,7 @@ let MATH = [
   { class: '数学', desc: '--', url: '--', fName: 'FACT' },
   { class: '数学', desc: '--', url: '--', fName: 'FACTDOUBLE' },
   { class: '数学', desc: '--', url: '--', fName: 'FLOOR' },
-  { class: '数学', desc: '--', url: '--', fName: 'FLOOR.MATH' },
+  { class: '数学', desc: '--', url: '--', fName: 'FLOORMATH' },
   { class: '数学', desc: '--', url: '--', fName: 'FLOORPRECISE' },
   { class: '数学', desc: '--', url: '--', fName: 'GCD' },
   { class: '数学', desc: '--', url: '--', fName: 'INT' },

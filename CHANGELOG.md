@@ -1,3 +1,12 @@
+## [0.1.24](https://github.com/kongnet/excel/compare/v0.1.23...v0.1.24) (2020-07-03)
+
+
+### :sparkles:
+
+* 数学三角函数完成 ([b780294](https://github.com/kongnet/excel/commit/b7802947bb288c863187f3c03b913bd48841d0bc))
+
+
+
 ## [0.1.23](https://github.com/kongnet/excel/compare/v0.1.22...v0.1.23) (2020-07-02)
 
 

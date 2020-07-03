@@ -377,7 +377,7 @@ let MATH = [
   { class: '数学', desc: '--', url: '--', fName: 'MOD' },
   { class: '数学', desc: '--', url: '--', fName: 'MROUND' },
   { class: '数学', desc: '--', url: '--', fName: 'MULTINOMIAL' },
-  { class: '数学', desc: '--', url: '--', fName: 'MUNT' },
+  { class: '数学', desc: '--', url: '--', fName: 'MUNIT' },
   { class: '数学', desc: '--', url: '--', fName: 'ODD' },
   { class: '数学', desc: '--', url: '--', fName: 'PI' },
   { class: '数学', desc: '--', url: '--', fName: 'POWER' },

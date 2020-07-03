@@ -67,6 +67,149 @@ console.log(LOG(86, 2.7182818))
 console.log(LOG10(86))
 console.log(LOG10(1e5))
 console.log(LOG10(10))
+
+console.log(
+  MDETERM([
+    [1, 3, 8, 5],
+    [1, 3, 6, 1],
+    [1, 1, 1, 0],
+    [7, 3, 10, 0]
+  ])
+)
+console.log(
+  MINVERSE([
+    [4, -1],
+    [2, 0]
+  ])
+)
+
+console.log(
+  MMULT(
+    [
+      [1, 3],
+      [7, 2]
+    ],
+    [
+      [2, 0],
+      [0, 2]
+    ]
+  )
+)
+
+console.log(MOD(3, 2))
+console.log(MOD(-3, 2))
+console.log(MOD(3, -2))
+console.log(MOD(-3, -2))
+
+console.log(MROUND(10, 3))
+console.log(MROUND(-10, -3))
+console.log(MROUND(1.3, 0.2))
+console.log(MROUND(5, -2)) //throw错误
+
+console.log(MULTINOMIAL(2, 3, 4))
+console.log(MULTINOMIAL(4, 3, 2))
+
+console.log(MUNIT(3))
+
+console.log(ODD(1.5))
+console.log(ODD(3))
+console.log(ODD(2))
+console.log(ODD(-1))
+console.log(ODD(-2))
+console.log(ODD(-3))
+
+console.log(PI())
+
+console.log(POWER(5, 2))
+console.log(POWER(98.6, 3.2))
+console.log(POWER(4, 5 / 4))
+
+console.log(PRODUCT(5, 15, 30))
+
+console.log(QUOTIENT(5, 2))
+console.log(QUOTIENT(4.5, 3.1))
+console.log(QUOTIENT(-10, 3))
+
+console.log(RADIANS(270))
+
+console.log(RAND())
+
+console.log(RANDBETWEEN(-1, 1))
+console.log(RANDBETWEEN(-1, 1))
+console.log(RANDBETWEEN(-1, 1))
+console.log(RANDBETWEEN(-1, 1))
+console.log(RANDBETWEEN(-1, 1))
+console.log(RANDBETWEEN(-1, 1))
+console.log(RANDBETWEEN(-1, 1))
+console.log(RANDBETWEEN(-1, 1))
+
+console.log(ROMAN(2345))
+
+//round函数不是很确定是否正确需要交叉检验
+console.log(ROUND(2.15, 1))
+console.log(ROUND(2.149, 1))
+console.log(ROUND(-1.475, 2))
+console.log(ROUND(21.5, -1))
+console.log(ROUND(626.3, -3))
+console.log(ROUND(1.98, -1))
+console.log(ROUND(-50.55, -2))
+
+console.log(ROUNDDOWN(3.2, 0))
+console.log(ROUNDDOWN(76.9, 0))
+console.log(ROUNDDOWN(3.14159, 3))
+console.log(ROUNDDOWN(-3.14159, 1))
+console.log(ROUNDDOWN(31415.92654, -2))
+
+console.log(ROUNDUP(3.2, 0))
+console.log(ROUNDUP(76.9, 0))
+console.log(ROUNDUP(3.14159, 3))
+console.log(ROUNDUP(-3.14159, 1))
+console.log(ROUNDUP(31415.92654, -2))
+
+console.log(SEC(45))
+console.log(SEC(30))
+
+console.log(SECH(45))
+console.log(SECH(30))
+
+console.log(SERIESSUM(0.785398163, 0, 2, [1, -0.5, 0.041666667, -0.001388889]))
+
+console.log(SIGN(1))
+console.log(SIGN(0))
+console.log(SIGN(-1))
+
+console.log(SIN(PI()))
+console.log(SIN(PI() / 2))
+console.log(SIN((PI() / 180) * 30))
+console.log(SIN(RADIANS(30)))
+
+console.log(2.868 * SINH(0.0342 * 1.03))
+
+console.log(SQRT(16))
+console.log(SQRT(-16)) //throw #NUM！
+
+console.log(SQRTPI(1))
+console.log(SQRTPI(2))
+
+console.log(SUM(1, 2, 3, 4))
+
+console.log(SUMPRODUCT([1, 2], [3, 4], [5, 6]))
+console.log(SUMSQ(3, 4))
+console.log(SUMX2MY2([2, 3, 9, 1, 8, 7, 5], [6, 5, 11, 7, 5, 4, 4]))
+console.log(SUMX2PY2([2, 3, 9, 1, 8, 7, 5], [6, 5, 11, 7, 5, 4, 4]))
+console.log(SUMXMY2([2, 3, 9, 1, 8, 7, 5], [6, 5, 11, 7, 5, 4, 4]))
+
+console.log(TAN(0.785))
+console.log(TAN((45 * PI()) / 180))
+console.log(TAN(RADIANS(45)))
+
+console.log(TANH(-2))
+console.log(TANH(0))
+console.log(TANH(0.5))
+
+console.log(TRUNC(8.9, 0))
+console.log(TRUNC(-8.9, -2.1))
+console.log(TRUNC(0.45, 0))
 */
 describe('数学函数测试', () => {
   test('math abs', async () => {

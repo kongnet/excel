@@ -8,3 +8,7 @@ declare let __DEBUG_PORT__: string
 
 declare let __COMMIT__: string
 declare let __VERSION__: string
+
+declare module 'meeko' {
+  export const math: any
+}

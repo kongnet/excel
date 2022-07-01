@@ -1,6 +1,6 @@
 {
   "name": "jsxls",
-  "version": "0.1.26",
+  "version": "0.1.27",
   "description": "JavaScript realizes all functions of Excel 2016",
   "main": "index.js",
   "scripts": {

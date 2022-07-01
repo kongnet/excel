@@ -411,7 +411,7 @@ let MATH = [
   { class: '数学', desc: '--', url: '--', fName: 'TANH' },
   { class: '数学', desc: '--', url: '--', fName: 'TRUNC' }
 ]
-let STATISTICAL = [
+let STATS = [
   { class: '统计', desc: '--', url: '--', fName: 'AVEDEV' },
   { class: '统计', desc: '--', url: '--', fName: 'AVERAGE' },
   { class: '统计', desc: '--', url: '--', fName: 'AVERAGEA' },
@@ -451,7 +451,14 @@ let STATISTICAL = [
   { class: '统计', desc: '--', url: '--', fName: 'FORECAST.ETS.SEASONALITY' },
   { class: '统计', desc: '--', url: '--', fName: 'FORECAST.ETS.STAT' },
   { class: '统计', desc: '--', url: '--', fName: 'FORECAST.LINEAR' },
-  { class: '统计', desc: '--', url: '--', fName: 'FREQUENCY' },
+  {
+    class: '统计',
+    desc:
+      'FREQUENCY 函数计算值在值范围内出现的频率，然后返回垂直数字数组。 例如，使用函数 FREQUENCY 可以在分数区域内计算测验分数的个数。 由于 FREQUENCY 返回一个数组，所以它必须以数组公式的形式输入。',
+    url:
+      'https://support.microsoft.com/zh-cn/office/frequency-%e5%87%bd%e6%95%b0-44e3be2b-eca0-42cd-a3f7-fd9ea898fdb9?ns=macexcel&version=90&ui=zh-cn&rs=zh-cn&ad=cn',
+    fName: 'FREQUENCY'
+  },
   { class: '统计', desc: '--', url: '--', fName: 'GAMMA' },
   { class: '统计', desc: '--', url: '--', fName: 'GAMMA.DIST' },
   { class: '统计', desc: '--', url: '--', fName: 'GAMMA.INV' },
@@ -531,7 +538,7 @@ $E.SEARCHREF = SEARCHREF
 $E.FINANCIAL = FINANCIAL
 $E.MATH = MATH
 $E.CUBE = CUBE
-$E.STATISTICAL = STATISTICAL
+$E.STATS = STATS
 
 let arr = []
 let obj = []

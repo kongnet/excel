@@ -9,5 +9,3 @@ const excelObj = {
 }
 
 module.exports = excelObj
-
-console.log(excelObj)

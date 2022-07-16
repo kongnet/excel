@@ -1,4 +1,4 @@
-## 0.1.26 (2022-07-01)
+## [0.1.27](https://github.com/kongnet/excel/compare/dd9a614dfc877977a8ef98bf9d3d4144605385b8...v0.1.27) (2022-07-01)
 
 
 ### :art:
@@ -15,6 +15,7 @@
 
 * 数学三角函数完成 ([b780294](https://github.com/kongnet/excel/commit/b7802947bb288c863187f3c03b913bd48841d0bc))
 * 完成逻辑组函数 ([8098967](https://github.com/kongnet/excel/commit/80989675248ce8d42fed4e5ed82babc25325656d))
+* 增加 FREQUENCY函数 ([1c3ceea](https://github.com/kongnet/excel/commit/1c3ceea49016c33d9d185a1753cd5efb9299c607))
 * 增加测试规范，增加文档生成 ([7257062](https://github.com/kongnet/excel/commit/7257062b1ae31eb28326fa56359d114f908b2c3e))
 * 增加函数到10% ([ab8925b](https://github.com/kongnet/excel/commit/ab8925bc530f124237eb60b2b95d0dac8589e17a))
 
